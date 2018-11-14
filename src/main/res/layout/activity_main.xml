@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/love_bg">
+
+    <EditText
+            android:id="@+id/her"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Her Name here"
+            android:paddingStart="120dp"
+            android:inputType="textPersonName"
+            android:background="#0000ff"
+            android:textColorHint="#ffffff"/>
+
+    <EditText
+            android:id="@+id/his"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter His Name here"
+            android:paddingStart="120dp"
+            android:layout_below="@id/her"
+            android:inputType="textPersonName"
+            android:textColorHint="#ffffff"
+            android:background="#ff00ff"
+            android:layout_marginTop="60dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/his"
+            android:background="#000000"
+            android:text="Click The heart and wait for a moment"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"/>
+
+    <ImageButton
+            android:id="@+id/imgbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/his"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/love_button"/>
+
+    <TextView
+            android:id="@+id/resultper"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/imgbtn"
+            android:background="#ffffff"
+            android:layout_marginTop="20dp"
+            android:hint="Your Love Percentage will be displayed here!!!"
+            android:paddingLeft="20dp"
+            android:textSize="18dp"/>
+
+</RelativeLayout>
